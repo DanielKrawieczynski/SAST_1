@@ -8,6 +8,14 @@ namespace SAST
         //commands in PATH is security-sensitive
         private void CommandsPath()
         {
+            var a1 = new A1();
+            a1.Print();
+            var a2 = new A2();
+            a2.Print();
+            var a3 = new A3();
+            a3.Print();
+            var a4 = new A4();
+            a4.Print();
             Process p = new Process();
             p.StartInfo.FileName = "binary"; // Sensitive kk
         }
@@ -27,4 +35,9 @@ namespace SAST
 
 
     }
+    
+    public class A1 { public void Print() { System.Console.WriteLine("a1"); } }
+    public class A2 { public void Print() { System.Console.WriteLine("a2"); } }
+    public class A3 { public void Print() { System.Console.WriteLine("a3"); } }
+    public class A4 { public void Print() { System.Console.WriteLine("a4"); } }
 }
