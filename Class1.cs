@@ -36,6 +36,7 @@ namespace SAST
 
     }
     
+    
     public class A1 { public void Print() { System.Console.WriteLine("a1"); } }
     public class A2 { public void Print() { System.Console.WriteLine("a2"); } }
     public class A3 { public void Print() { System.Console.WriteLine("a3"); } }
